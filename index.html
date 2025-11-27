@@ -1,154 +1,197 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Landing Page para IA</title>
+    <title>APEX MTB | Professional Double Suspension Bikes</title>
+    <meta name="description"
+        content="Premium double suspension mountain bikes for professional riders. Conquer any trail with APEX.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header class="navbar">
-        <div class="container">
-            <nav>
-                <ul>
-                    <li><a href="#hero">Inicio</a></li>
-                    <li><a href="#benefits">Beneficios</a></li>
-                    <li><a href="#pricing">Precios</a></li>
-                    <li><a href="#contact">Contacto</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-toggle">☰</button>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">APEX<span class="accent">.</span></a>
+            <div class="nav-links">
+                <a href="#bikes">Bikes</a>
+                <a href="#tech">Technology</a>
+                <a href="#about">About</a>
+                <a href="#contact" class="btn-primary">Visit Us</a>
+            </div>
+            <button class="mobile-menu-btn" aria-label="Toggle menu">
+                <i class="bi bi-list"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">CONQUER <br><span class="outline-text">THE UNTAMED</span></h1>
+                <p class="hero-subtitle">Professional double-suspension engineering for the world's most demanding
+                    trails.</p>
+                <div class="hero-cta">
+                    <a href="#bikes" class="btn-primary">Explore Models</a>
+                    <a href="#tech" class="btn-secondary"><i class="bi bi-play-circle"></i> Watch Film</a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">180<small>mm</small></span>
+                        <span class="stat-label">Travel</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">29<small>"</small></span>
+                        <span class="stat-label">Wheels</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">Full</span>
+                        <span class="stat-label">Carbon</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper">
+                <div class="hero-backdrop"></div>
+                <!-- Image will be inserted here via CSS or img tag, using CSS for better control over overlay -->
+                <img src="assets/hero_mtb.png" alt="Professional Downhill Mountain Bike" class="hero-img">
+            </div>
         </div>
     </header>
 
-    <main>
-        <section id="hero" class="hero-section">
-            <div class="container">
-                <h2>Esta es la Sección Hero (Llamada a la Acción Principal)</h2>
-                <p>Aquí se presenta el valor principal del producto o servicio de manera impactante. Ideal para integrar un modelo de IA que genere titulares o resúmenes atractivos.</p>
-                <button class="btn">¡Acción Principal!</button>
-            </div>
-        </section>
-
-        <section id="benefits" class="benefits-section">
-            <div class="container">
-                <h2>Deliciosos Beneficios de Nuestros "Carrot Dogs"</h2>
-                <div class="benefit-grid">
-                    <div class="benefit-item">
-                        <h3>Ricos en Vitaminas y Antioxidantes</h3>
-                        <p>Cada "Carrot Dog" está cargado de Vitamina A para una visión saludable y poderosos antioxidantes que fortalecen tu sistema inmune.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h3>Alto Contenido de Fibra</h3>
-                        <p>Nuestras zanahorias aportan fibra esencial para una digestión óptima y te ayudan a sentirte satisfecho por más tiempo.</p>
-                    </div>
-                    <div class="benefit-item">
-                        <h3>Opción Baja en Calorías y Grasas</h3>
-                        <p>Disfruta de un sabor increíble sin culpas. Nuestros "Carrot Dogs" son una alternativa ligera y saludable a los hot dogs tradicionales.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="how-it-works" class="how-it-works-section">
-            <div class="container">
-                <h2 class="food-title">¡Así de Fácil Disfrutas Tus Carrot Dogs!</h2>
-                <div class="steps-grid">
-                    <div class="step-item">
-                        <h3>1. Elige tu Zanahoria Perfecta</h3>
-                        <p>Seleccionamos zanahorias frescas y de la mejor calidad, preparadas para ser la estrella de tu hot dog.</p>
-                    </div>
-                    <div class="step-item">
-                        <h3>2. Personaliza tu <span class="highlight-sabor">Sabor</span></h3>
-                        <p>Añade tus aderezos y toppings favoritos, desde salsas clásicas hasta opciones innovadoras para una experiencia única.</p>
-                    </div>
-                    <div class="step-item">
-                        <h3>3. ¡A Disfrutar sin Culpa!</h3>
-                        <p>Recibe tu delicioso y saludable "Carrot Dog" listo para saborear, una opción nutritiva y llena de sabor.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="pricing" class="pricing-section">
-            <div class="container">
-                <h2>Nuestros Planes de Carrot Dogs</h2>
-                <div class="pricing-grid">
-                    <div class="price-plan">
-                        <h3>Carrot Dog Clásico</h3>
-                        <p class="price">$9/unidad</p>
-                        <ul>
-                            <li>Un Carrot Dog Clásico</li>
-                            <li>Elige 1 aderezo</li>
-                            <li>Salsa a tu elección</li>
-                        </ul>
-                        <button class="btn">¡Lo Quiero!</button>
-                    </div>
-                    <div class="price-plan featured">
-                        <h3>Carrot Dog Especial</h3>
-                        <p class="price">$19/combo</p>
-                        <ul>
-                            <li>Un Carrot Dog Jumbo</li>
-                            <li>Elige 2 aderezos premium</li>
-                            <li>Variedad de salsas</li>
-                            <li>Papas de zanahoria</li>
-                        </ul>
-                        <button class="btn">¡Pedir Combo!</button>
-                    </div>
-                    <div class="price-plan">
-                        <h3>Festín Vegano de Carrot Dogs</h3>
-                        <p class="price">$49/festín</p>
-                        <ul>
-                            <li>Dos Carrot Dogs Jumbo</li>
-                            <li>Todos los aderezos premium</li>
-                            <li>Salsas ilimitadas</li>
-                            <li>Bebida natural</li>
-                            <li>Postre vegano</li>
-                        </ul>
-                        <button class="btn">¡Quiero el Festín!</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="testimonials" class="testimonials-section">
-            <div class="container">
-                <h2>Esta es la Sección de Testimonios (Opiniones de Usuarios)</h2>
-                <div class="testimonial-grid">
-                    <div class="testimonial-item">
-                        <p>"Este producto es increíble. La IA podría analizar los sentimientos de los testimonios y destacarlos."</p>
-                        <p class="author">- Cliente Satisfecho 1</p>
-                    </div>
-                    <div class="testimonial-item">
-                        <p>"Cambió mi forma de trabajar. La IA podría resumir los puntos clave de múltiples testimonios."</p>
-                        <p class="author">- Cliente Satisfecho 2</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="faq" class="faq-section">
-            <div class="container">
-                <h2>Esta es la Sección de Preguntas Frecuentes (FAQ)</h2>
-                <div class="faq-item">
-                    <h3>Pregunta frecuente 1?</h3>
-                    <p>Respuesta a la pregunta frecuente 1. Un modelo de IA podría generar respuestas dinámicas a nuevas preguntas.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>Pregunta frecuente 2?</h3>
-                    <p>Respuesta a la pregunta frecuente 2. La IA puede categorizar las preguntas y sugerir respuestas relevantes.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer id="contact" class="footer">
+    <!-- Tech/Features Section -->
+    <section id="tech" class="tech-section">
         <div class="container">
-            <h2>Este es el Footer (Información de Contacto y Legal)</h2>
-            <p>&copy; 2025 Tu Empresa. Todos los derechos reservados. <br> Integración de IA para aprendizaje.</p>
+            <div class="section-header">
+                <h2 class="section-title">ENGINEERED TO <span class="accent">DOMINATE</span></h2>
+            </div>
+            <div class="tech-grid">
+                <div class="tech-card">
+                    <i class="bi bi-bezier2"></i>
+                    <h3>Kinetic Linkage</h3>
+                    <p>Advanced suspension kinematics that isolate braking forces and maximize traction.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-feather"></i>
+                    <h3>Ultra-Light Carbon</h3>
+                    <p>Aerospace-grade carbon fiber layup for the ultimate strength-to-weight ratio.</p>
+                </div>
+                <div class="tech-card">
+                    <i class="bi bi-gear-wide-connected"></i>
+                    <h3>Pro Drivetrain</h3>
+                    <p>Wireless electronic shifting for precise, instant gear changes under load.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bikes Showcase -->
+    <section id="bikes" class="bikes-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">THE <span class="accent">LINEUP</span></h2>
+            </div>
+            <div class="bikes-grid">
+                <!-- Bike 1 -->
+                <article class="bike-card">
+                    <div class="bike-image-placeholder">
+                        <div class="overlay"></div>
+                        <span>Enduro Pro</span>
+                    </div>
+                    <div class="bike-info">
+                        <h3>APEX PREDATOR</h3>
+                        <p class="bike-desc">The ultimate enduro racing machine. 170mm travel.</p>
+                        <div class="bike-specs">
+                            <span><i class="bi bi-speedometer"></i> Fast</span>
+                            <span><i class="bi bi-tree"></i> Agile</span>
+                        </div>
+                        <a href="#" class="btn-text">View Specs <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </article>
+                <!-- Bike 2 -->
+                <article class="bike-card">
+                    <div class="bike-image-placeholder">
+                        <div class="overlay"></div>
+                        <span>Downhill WC</span>
+                    </div>
+                    <div class="bike-info">
+                        <h3>APEX GRAVITY</h3>
+                        <p class="bike-desc">World Cup winning downhill performance. 200mm travel.</p>
+                        <div class="bike-specs">
+                            <span><i class="bi bi-lightning"></i> Stable</span>
+                            <span><i class="bi bi-shield-check"></i> Tough</span>
+                        </div>
+                        <a href="#" class="btn-text">View Specs <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </article>
+                <!-- Bike 3 -->
+                <article class="bike-card">
+                    <div class="bike-image-placeholder">
+                        <div class="overlay"></div>
+                        <span>Trail Light</span>
+                    </div>
+                    <div class="bike-info">
+                        <h3>APEX FLOW</h3>
+                        <p class="bike-desc">All-day trail slayer. 150mm travel, infinite fun.</p>
+                        <div class="bike-specs">
+                            <span><i class="bi bi-emoji-smile"></i> Playful</span>
+                            <span><i class="bi bi-arrow-up-right"></i> Climber</span>
+                        </div>
+                        <a href="#" class="btn-text">View Specs <i class="bi bi-arrow-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer id="contact" class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <h2>APEX<span class="accent">.</span></h2>
+                <p>Redefining mountain biking performance.</p>
+            </div>
+            <div class="footer-links">
+                <div class="link-group">
+                    <h4>Shop</h4>
+                    <a href="#">Bikes</a>
+                    <a href="#">Gear</a>
+                    <a href="#">Components</a>
+                </div>
+                <div class="link-group">
+                    <h4>Support</h4>
+                    <a href="#">Warranty</a>
+                    <a href="#">Service Centers</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="link-group">
+                    <h4>Social</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 APEX Bicycles. All rights reserved.</p>
         </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>
